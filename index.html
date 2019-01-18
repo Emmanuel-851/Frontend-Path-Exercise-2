@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temperaturas</title>
+</head>
+<body>
+    <h1>Conversor de temperaturas</h1>
+    <div class="input_value">
+        <input type="text" name="valor" id="valor" placeholder="Escribe el valo de la unidad a convertir">
+    </div>
+    <div class="selects">
+
+        <label for="original">¿Cuál es la unidad original de ese valor?</label>
+        <select name="original" id="original">
+            <!-- Originalmente no tengo opciones-->
+        </select>
+
+        <label for="to">¿A qué unidad deseas convertir?</label>
+        <select name="to" id="to">
+        </select>
+
+    </div>
+
+    <button id="calcular_btn">Calcular</button>
+
+    <div class="output">
+        <p>El valor convertido es: </p>
+        <p id="returned_value"></p>
+    </div>
+    
+    <!-- Los scripts van siempre al final del body, no en el head -->
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <script src="hello_world.js"></script>
+</body>
+</html>
